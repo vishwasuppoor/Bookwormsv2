@@ -1,0 +1,83 @@
+:root {
+    --user-circle-color-fill: #cccccc;
+    --user-circle-color-stroke: ##ffffff;
+    --book-circle-color-fill: #22bb99;
+    --book-circle-color-stroke: #ffffff;
+    --user-circle-color-fill-fixed: #444444;
+    --user-circle-color-stroke-fixed: ##ffffff;
+    --book-circle-color-fill-fixed: #117755;
+    --book-circle-color-stroke-fixed: #ffffff;
+    --path-link-color: #999999;
+    font-family: sans-serif;
+}
+
+
+path.link {
+	fill: none;
+	stroke: var(--path-link-color);
+	stroke-width: 0.5px;
+}
+
+circle {
+	fill: #ccc;
+	stroke: #fff;
+	stroke: black;
+	stroke-width: 1.5px;
+}
+
+circle.user {
+    fill: var(--user-circle-color-fill);
+	stroke: var(--user-circle-color-stroke);
+	stroke-width: 1.5px;
+}
+circle.user.fixed {
+    fill: var(--user-circle-color-fill-fixed);
+	stroke: var(--user-circle-color-stroke-fixed);
+	stroke-width: 2.5px;
+}
+circle.book {
+    fill: var(--book-circle-color-fill);
+	stroke: var(--book-circle-color-stroke);
+	stroke-width: 1.5px;
+}
+circle.book.fixed {
+    fill: var(--book-circle-color-fill-fixed);
+	stroke: var(--book-circle-color-stroke-fixed);
+	stroke-width: 2.5px;
+}
+
+
+text {
+	fill: #000;
+	font-family: sans-serif;
+	pointer-events: none;
+}
+
+#svgdiv1 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+}
+#svgdiv2 {
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+}
+#svgdiv1, #svgdiv2, #bookinfo {
+    border-style: dotted;
+    border-width: 0.5px;
+}
+#bookinfo {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+}
+
+.star {
+    color: #AAAAAA;
+}
+.star.checked {
+    color: orange;
+}
